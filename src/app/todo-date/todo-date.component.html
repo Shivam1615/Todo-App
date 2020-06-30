@@ -1,0 +1,13 @@
+<div class = "date class" style = "text-align: center;">
+      <div class = "todo-dates"> 
+        <ul>
+            <br>
+            Title: {{todo.title}}; 
+            <br>
+            Date created: {{todo.createdAt}};
+            <br>
+            <span *ngIf = "!todo.completed">Progress: This item is not completed;</span>
+            <span *ngIf = "todo.completed">Progress: This item is completed;</span>
+        </ul>
+      </div>
+</div>
